@@ -3,7 +3,12 @@ let container = document.getElementById("container");
 let itemHeader = document.getElementById("itemHeader");
 let item = 1;
 let selectedLanguage = document.getElementById("selected-language");
-let languageButton = document.getElementById("language-button");
+let languageButtonSvenska = document.getElementById("language-button-svenska");
+let languageButtonEngelska = document.getElementById(
+  "language-button-engelska"
+);
+let english = document.getElementById("english");
+let swedish = document.getElementById("swedish");
 
 button.addEventListener("click", () => {
   container.classList.toggle("hidden");
@@ -40,13 +45,18 @@ tyreButton.forEach((button) => {
   });
 });
 
-//Language
-languageButton.addEventListener("click", () => {
-  if (navigator.language.match("en-US") || navigator.language.match("en")) {
-    selectedLanguage.innerText = `ENGLISH`;
-    console.log("engelska");
-  } else if (navigator.language.match("sv-SE") || navigator.language.match("sv")) {
-    selectedLanguage.innerText = `SVENSKA`;
-    console.log("svenska");
-  }
+languageButtonSvenska.addEventListener("click", () => {
+  english.classList.add("hidden-lang");
+  swedish.classList.remove("hidden-lang");
+  console.log("Svenska knappen");
+  console.log(english);
+  console.log(swedish);
+});
+
+languageButtonEngelska.addEventListener("click", () => {
+  swedish.classList.add("hidden-lang");
+  english.classList.remove("hidden-lang");
+  console.log("Engelska knappen");
+  console.log(english);
+  console.log(swedish);
 });

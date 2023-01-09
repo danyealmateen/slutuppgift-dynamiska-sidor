@@ -206,3 +206,16 @@ img {
     opacity: 1;
   }
 }
+
+.fblogo {
+  border: 5px solid gold;
+  cursor: pointer;
+}
+
+.hidden-lang {
+  display: none;
+}
+
+.pokemon {
+  width: 300px;
+}
