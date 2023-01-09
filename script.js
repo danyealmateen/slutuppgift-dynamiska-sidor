@@ -3,6 +3,7 @@ let container = document.getElementById("container");
 let itemHeader = document.getElementById("itemHeader");
 let item = 1;
 let selectedLanguage = document.getElementById("selected-language");
+let languageButton = document.getElementById("language-button");
 
 button.addEventListener("click", () => {
   container.classList.toggle("hidden");
@@ -19,6 +20,8 @@ buttonForMode.addEventListener("click", () => {
     buttonForMode.style.backgroundColor = "white";
     buttonForMode.style.color = "black";
     buttonForMode.textContent = "Light mode";
+    itemHeader.style.color = "white";
+    selectedLanguage.style.color = "white";
   } else {
     mode.content = "light";
     buttonForMode.style.backgroundColor = "black";
@@ -38,13 +41,12 @@ tyreButton.forEach((button) => {
 });
 
 //Language
-if (navigator.language.match("en-US") || navigator.language.match("en")) {
-  selectedLanguage.innerText = `ENGLISH`;
-  console.log("engelska");
-} else if (
-  navigator.language.match("sv-SE") ||
-  navigator.language.match("sv")
-) {
-  selectedLanguage.innerText = `SVENSKA`;
-  console.log("svenska");
-}
+languageButton.addEventListener("click", () => {
+  if (navigator.language.match("en-US") || navigator.language.match("en")) {
+    selectedLanguage.innerText = `ENGLISH`;
+    console.log("engelska");
+  } else if (navigator.language.match("sv-SE") || navigator.language.match("sv")) {
+    selectedLanguage.innerText = `SVENSKA`;
+    console.log("svenska");
+  }
+});

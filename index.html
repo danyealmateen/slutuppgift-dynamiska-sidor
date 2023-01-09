@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta id="mode" name="color-scheme" content="dark" />
+    <meta id="mode" name="color-scheme" content="light" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="defaultstyle.css" />
     <script src="script.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
     <div id="logo">
+      <button id="language-button">Switch lang</button>
       <h2 id="selected-language">lang</h2>
       <br />
       <h2 id="itemHeader">Items in the basket:</h2>
       <button id="buttonForMode">Mode</button>
-      <img src="/images/logo.png" />
+      <img class="fade-in-text" src="/images/logo.png" />
       <button id="button">=</button>
     </div>
 
-    <div id="container" class="hidden">
+    <div id="container" class="hidden fade-in-text">
       <h3 id="container-item">About</h3>
       <h3 id="container-item">Contact</h3>
       <h3 id="container-item">Investor relations</h3>
@@ -109,11 +111,11 @@
       </div>
     </div>
     <div id="footer">
-      <h1>Nottingham</h1>
-      <h2>217 63 Birgminh</h2>
-      <h2>Great Britain</h2>
-      <h2>+54 13 443 5323</h2>
-      <h2>f1tyres@gmail.com</h2>
+      <h2><a class="links" href="/">Visit us on Facebook</a></h2>
+      <img src="/images/fb.png" />
+      <h2><a class="links" href="/">Great Britain</a></h2>
+      <h2><a class="links" href="/">+54 13 443 5323</a></h2>
+      <h2><a class="links" href="/">f1tyres@gmail.com</a></h2>
     </div>
   </body>
 </html>

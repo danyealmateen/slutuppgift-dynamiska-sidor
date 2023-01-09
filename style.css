@@ -28,6 +28,7 @@ body {
 #container-item {
   margin: 15px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #container-item:hover {
@@ -41,7 +42,7 @@ body {
 
 #grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin-top: 20px;
 }
@@ -84,6 +85,7 @@ img {
   color: white;
   background-color: black;
   text-align: center;
+  padding: 15px;
 }
 
 @media screen and (max-width: 800px) {
@@ -117,7 +119,7 @@ img {
   }
 
   #logo img {
-    border-radius: 50px;
+    border-radius: px;
     margin: 15px 0px 15px 0px;
   }
 }
@@ -127,6 +129,7 @@ img {
   font-size: 25px;
   border: 3px solid red;
   margin-top: 15px;
+  margin: 15px;
 }
 
 .rotate {
@@ -140,5 +143,66 @@ img {
   }
   to {
     transform: rotate(359deg);
+  }
+}
+
+#itemHeader,
+#selected-language {
+  color: white;
+  padding: 15px;
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 15px;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
