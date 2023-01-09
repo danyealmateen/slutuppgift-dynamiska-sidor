@@ -54,8 +54,7 @@ languageButtonSvenska.addEventListener("click", () => {
 });
 
 languageButtonEngelska.addEventListener("click", () => {
-  swedish.classList.add("hidden-lang");
-  english.classList.remove("hidden-lang");
+  sC
   console.log("Engelska knappen");
   console.log(english);
   console.log(swedish);
